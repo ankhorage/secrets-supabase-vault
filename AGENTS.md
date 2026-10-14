@@ -4,7 +4,7 @@
 
 ## Repository
 
-Package: `@ankhorage/supabase-vault`
+Package: `@ankhorage/secrets-supabase-vault`
 
 Server-only Supabase Vault secret-store adapter for Ankhorage.
 
