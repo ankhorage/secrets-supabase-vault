@@ -1,5 +1,11 @@
 # @ankhorage/supabase-vault
 
+## 1.0.1
+
+### Patch Changes
+
+- e24f4fb: Update dependencies: `@ankhorage/contracts`, `@ankhorage/paradox`.
+
 ## 1.0.0
 
 ### Major Changes
