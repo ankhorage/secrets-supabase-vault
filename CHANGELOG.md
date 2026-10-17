@@ -1,5 +1,11 @@
 # @ankhorage/supabase-vault
 
+## 1.0.2
+
+### Patch Changes
+
+- 6108b3b: Update dependencies: `@ankhorage/secrets`.
+
 ## 1.0.1
 
 ### Patch Changes
