@@ -14,7 +14,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v1.0.10",
+      "value": "v1.0.11",
       "color": "cb3837"
     },
     {
@@ -62,7 +62,7 @@
   ],
   "usage": {
     "packageName": "@ankhorage/secrets-supabase-vault",
-    "command": "ankh secrets-supabase-vault --help"
+    "command": null
   },
   "usageEntries": [],
   "exampleCount": 0,
