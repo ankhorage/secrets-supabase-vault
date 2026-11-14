@@ -6,7 +6,7 @@
       "name": "@ankhorage/secrets-supabase-vault",
       "dependencies": {
         "@ankhorage/contracts": "^26.11.1",
-        "@ankhorage/secrets": "^0.3.1",
+        "@ankhorage/secrets": "^0.3.2",
       },
       "devDependencies": {
         "@ankhorage/devtools": "^2.3.47",
@@ -40,7 +40,7 @@
 
     "@ankhorage/rules-repository": ["@ankhorage/rules-repository@0.2.3", "", { "dependencies": { "@ankhorage/rules": "^0.2.0" } }, "sha512-NPQ45JiorrNXvSNiNDiiyz7O5KiojJRi4ai1924L5Gxnm86wFmhUoti8/t0+kyV/no1kzY39z5NOli2W38loUQ=="],
 
-    "@ankhorage/secrets": ["@ankhorage/secrets@0.3.1", "", { "dependencies": { "@ankhorage/capability": "^0.2.2", "@ankhorage/contracts": "^26.0.0" } }, "sha512-ER/H7dv1nbBk7FYyNxth/IKepC7MyDUvVoBn0NiVijHHo7VqmkgTEYuJyBBJ+dIzJC7654cXTpq4LTTF+APoLQ=="],
+    "@ankhorage/secrets": ["@ankhorage/secrets@0.3.2", "", { "dependencies": { "@ankhorage/capability": "^0.2.2", "@ankhorage/contracts": "^26.0.0" } }, "sha512-W6+LozWv47Qqiv4nZLlHHNLfvwbpGpshTLSR0a6YzwiTQc3kOpnQln0MuNAPcEWtuHMxdMleUm0U78nc49X6FQ=="],
 
     "@ankhorage/utility": ["@ankhorage/utility@0.5.5", "", { "dependencies": { "@ankhorage/contracts": "^12.0.1" }, "peerDependencies": { "@techstark/opencv-js": "^5.0.0-release.1", "pixelmatch": "^7.2.0", "sharp": "^0.35.4", "tesseract.js": "^7.0.0" }, "optionalPeers": ["@techstark/opencv-js", "pixelmatch", "sharp", "tesseract.js"] }, "sha512-so1NXcIOQjEPNsNpdGp9McXsw8oIo4Mw/pF3y2x69f1MbwqEC79H7I0dResKs52S8Il4JeO/e5RO3Sf4yDdMGA=="],
 
