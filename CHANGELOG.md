@@ -1,5 +1,11 @@
 # @ankhorage/supabase-vault
 
+## 1.0.17
+
+### Patch Changes
+
+- f0432ad: Add canonical authored repository metadata for organization-wide tooling and documentation consumers.
+
 ## 1.0.16
 
 ### Patch Changes
