@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "kind": "adapter",
+  "title": "Ankhorage Secrets Supabase Vault",
+  "summary": "Implements server-side secret storage and infrastructure lifecycle integration for Supabase Vault.",
+  "purpose": "Allow consumers to use Supabase Vault through portable secret-store and infrastructure boundaries without coupling their core logic to Supabase SQL operations.",
+  "domain": "secret storage and Supabase Vault infrastructure",
+  "responsibilities": [
+    "Store, retrieve, list, and delete secret payloads through the canonical secret-store port.",
+    "Expose migration material and metadata required to prepare Supabase Vault.",
+    "Plan, reconcile, inspect, and destroy Vault infrastructure through the canonical Infra service adapter."
+  ],
+  "boundaries": [
+    "Does not own application authorization, secret naming policy, or credential distribution.",
+    "Does not provide a browser-side secret API.",
+    "Does not own the portable secret or infrastructure contracts it implements."
+  ],
+  "audience": [
+    "Server applications that select Supabase Vault as their secret-store provider.",
+    "Infrastructure compositions provisioning the Supabase Vault lifecycle."
+  ],
+  "useCases": [
+    "Persist and retrieve an application secret through the canonical secret-store API.",
+    "Provision the Vault schema as part of an Infra environment lifecycle.",
+    "Inspect or explicitly remove adapter-owned Vault resources."
+  ],
+  "architecture": {
+    "role": "Provider adapter translating portable secret-store and Infra service boundaries to Supabase Vault operations.",
+    "invariants": [
+      "Supabase-specific SQL and lifecycle behavior remains at adapter boundaries.",
+      "Secret payloads are handled only by trusted server-side callers.",
+      "Portable consumers depend on published ports rather than this repository's internal types."
+    ]
+  },
+  "implements": [
+    {
+      "packageName": "@ankhorage/secrets",
+      "subpath": "./port",
+      "interfaceId": "SecretStoreAdapter"
+    },
+    {
+      "packageName": "@ankhorage/contracts",
+      "subpath": "./infra",
+      "interfaceId": "InfraServiceAdapter"
+    }
+  ],
+  "constraints": {
+    "platforms": ["Server-side JavaScript runtimes", "Supabase PostgreSQL"],
+    "security": [
+      "Vault access requires trusted server credentials and is not safe for untrusted browser clients.",
+      "Destructive namespace removal requires an explicitly trusted SQL client."
+    ]
+  }
+}
