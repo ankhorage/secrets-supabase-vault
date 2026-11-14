@@ -2,8 +2,10 @@
   "packageName": "SUPABASE-VAULT",
   "packageId": "@ankhorage/secrets-supabase-vault",
   "description": "Server-only Supabase Vault secret-store adapter for Ankhorage.",
-  "collaborators": null,
-  "donation": null,
+  "collaborators": true,
+  "donation": {
+    "account": "ankhorage"
+  },
   "badges": [
     {
       "id": "license",
@@ -14,7 +16,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v1.0.13",
+      "value": "v1.0.14",
       "color": "cb3837"
     },
     {

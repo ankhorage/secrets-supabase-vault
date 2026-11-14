@@ -3,20 +3,13 @@
 
 # SUPABASE-VAULT
 
-![license: MIT](././docs/badges/license.svg) ![npm: v1.0.13](././docs/badges/npm.svg) ![runtime: bun](././docs/badges/runtime.svg) ![typescript: strict](././docs/badges/typescript.svg) ![eslint: checked](././docs/badges/eslint.svg) ![prettier: checked](././docs/badges/prettier.svg) ![build: checked](././docs/badges/build.svg) ![tests: checked](././docs/badges/tests.svg) ![paradox: warnings](././docs/badges/docs.svg)
+![license: MIT](././docs/badges/license.svg) ![npm: v1.0.14](././docs/badges/npm.svg) ![runtime: bun](././docs/badges/runtime.svg) ![typescript: strict](././docs/badges/typescript.svg) ![eslint: checked](././docs/badges/eslint.svg) ![prettier: checked](././docs/badges/prettier.svg) ![build: checked](././docs/badges/build.svg) ![tests: checked](././docs/badges/tests.svg) ![paradox: warnings](././docs/badges/docs.svg)
 
 Server-only Supabase Vault secret-store adapter for Ankhorage.
 
-## Generated documentation
+## Documentation
 
-- [Interactive documentation app](././docs/index.html)
-- [Public API reference](././docs/exports.md)
-- [Component registry](././docs/components.md)
-- [Architecture overview](././docs/diagrams/architecture-overview.mmd)
-- [Module relationships](././docs/diagrams/module-relationships.mmd)
-- [Export graph](././docs/diagrams/export-graph.mmd)
-- [createInfraAdapter sequence](././docs/diagrams/sequences/create-infra-adapter.mmd)
-- [createSupabaseVaultAdapter sequence](././docs/diagrams/sequences/create-supabase-vault-adapter.mmd)
+Open `./docs/index.html` locally in your browser to browse the complete documentation.
 
 ## Public API
 
@@ -40,3 +33,14 @@ Source: `src/features/secret-store-infrastructure/composition/createInfraAdapter
 Related symbols: `SupabaseVaultAdapterOptions`
 
 </details>
+
+## Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
+
+## Donation
+
+If this project is useful to you, you can support its continued development.
+
+[Support @ankhorage](https://github.com/sponsors/ankhorage)
