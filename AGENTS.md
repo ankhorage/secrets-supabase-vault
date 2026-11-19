@@ -6,7 +6,38 @@
 
 Package: `@ankhorage/secrets-supabase-vault`
 
-Server-only Supabase Vault secret-store adapter for Ankhorage.
+Title: Ankhorage Secrets Supabase Vault
+
+Implements server-side secret storage and infrastructure lifecycle integration for Supabase Vault.
+
+Purpose: Allow consumers to use Supabase Vault through portable secret-store and infrastructure boundaries without coupling their core logic to Supabase SQL operations.
+
+Audience:
+
+- Server applications that select Supabase Vault as their secret-store provider.
+- Infrastructure compositions provisioning the Supabase Vault lifecycle.
+
+## Scope and boundaries
+
+Responsibilities:
+
+- Store, retrieve, list, and delete secret payloads through the canonical secret-store port.
+- Expose migration material and metadata required to prepare Supabase Vault.
+- Plan, reconcile, inspect, and destroy Vault infrastructure through the canonical Infra service adapter.
+
+Boundaries:
+
+- Does not own application authorization, secret naming policy, or credential distribution.
+- Does not provide a browser-side secret API.
+- Does not own the portable secret or infrastructure contracts it implements.
+
+Architecture role: Provider adapter translating portable secret-store and Infra service boundaries to Supabase Vault operations.
+
+Architectural invariants:
+
+- Supabase-specific SQL and lifecycle behavior remains at adapter boundaries.
+- Secret payloads are handled only by trusted server-side callers.
+- Portable consumers depend on published ports rather than this repository's internal types.
 
 ## Current architecture only
 
@@ -64,6 +95,26 @@ Paradox `/*** ... */` comments in `src` and leading `@usage` comments in real
 `examples/<example>/...` source files, plus any repository-owned manual documentation outside the
 generated output. The managed release workflow runs `bun run docs` after the package version bump
 and commits the regenerated artifacts in the release commit.
+
+## GitHub task lifecycle and workspace cleanup
+
+- **Start.** Treat each issue implementation, PR implementation, review, and change request (CR)
+  as an independent task. Fetch the current remote default branch and read the applicable issue,
+  PR, HEAD, review feedback, and CI state. Use a fresh, uniquely named task checkout or worktree.
+  Concurrent tasks must have distinct writable checkout, temporary, build, and cache paths.
+- **CRs.** Fetch and check out the current remote PR branch in the new workspace. Preserve PR
+  history and scope. Push corrections to the existing PR branch.
+- **Delivery.** Run applicable checks. Commit and push all intended changes, then verify that
+  GitHub has the intended commit on the correct remote branch. Report the exact HEAD, checks, CI,
+  findings, and blockers. Report acceptance that was not run as unverified. Read-only reviews hand
+  off their findings without creating a commit. Merge requires explicit authorization.
+- **Cleanup.** After handoff, resolve every candidate path and remove only task-owned directories
+  whose resolved paths are strictly under the resolved system path for `/tmp` (`/private/tmp` on
+  macOS). Refuse candidates that resolve outside that boundary, including through a symlink. Use
+  Git-aware removal for worktrees. Preserve workspaces outside the boundary, shared directories,
+  other tasks' directories, uncommitted changes, and unpushed commits. If blocked, persist
+  recoverable work first and document what must be retained. Report whether cleanup succeeded, was
+  skipped, or was blocked.
 
 ## Pull requests
 
