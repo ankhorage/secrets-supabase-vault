@@ -3,6 +3,7 @@
   "packageId": "@ankhorage/secrets-supabase-vault",
   "description": "Implements server-side secret storage and infrastructure lifecycle integration for Supabase Vault.",
   "purpose": "Allow consumers to use Supabase Vault through portable secret-store and infrastructure boundaries without coupling their core logic to Supabase SQL operations.",
+  "productDocumentation": null,
   "collaborators": true,
   "donation": {
     "account": "ankhorage"
@@ -17,7 +18,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v1.0.18",
+      "value": "v1.0.19",
       "color": "cb3837"
     },
     {
@@ -53,8 +54,8 @@
     {
       "id": "tests",
       "label": "tests",
-      "value": "checked",
-      "color": "0a7f3f"
+      "value": "configured",
+      "color": "6f42c1"
     },
     {
       "id": "docs",
