@@ -69,7 +69,7 @@
     "@ankhorage/secrets": "^0.3.2"
   },
   "devDependencies": {
-    "@ankhorage/devtools": "^2.9.8",
+    "@ankhorage/devtools": "^2.9.9",
     "@ankhorage/paradox": "^0.6.0",
     "@types/bun": "^1.4.2",
     "@types/node": "^25.6.0",
