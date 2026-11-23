@@ -3,7 +3,7 @@
 
 # SUPABASE-VAULT
 
-![license: MIT](././docs/badges/license.svg) ![npm: v1.0.21](././docs/badges/npm.svg) ![runtime: bun](././docs/badges/runtime.svg) ![typescript: strict](././docs/badges/typescript.svg) ![eslint: checked](././docs/badges/eslint.svg) ![prettier: checked](././docs/badges/prettier.svg) ![build: checked](././docs/badges/build.svg) ![tests: configured](././docs/badges/tests.svg) ![paradox: warnings](././docs/badges/docs.svg)
+![license: MIT](././docs/badges/license.svg) ![npm: v1.0.22](././docs/badges/npm.svg) ![runtime: bun](././docs/badges/runtime.svg) ![typescript: strict](././docs/badges/typescript.svg) ![eslint: checked](././docs/badges/eslint.svg) ![prettier: checked](././docs/badges/prettier.svg) ![build: checked](././docs/badges/build.svg) ![tests: configured](././docs/badges/tests.svg) ![paradox: warnings](././docs/badges/docs.svg)
 
 Implements server-side secret storage and infrastructure lifecycle integration for Supabase Vault.
 
