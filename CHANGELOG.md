@@ -1,5 +1,11 @@
 # @ankhorage/supabase-vault
 
+## 1.1.1
+
+### Patch Changes
+
+- c2f5ef3: Add contributor avatar
+
 ## 1.1.0
 
 ### Minor Changes

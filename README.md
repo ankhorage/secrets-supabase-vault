@@ -3,7 +3,7 @@
 
 # SUPABASE-VAULT
 
-![license: MIT](././docs/badges/license.svg) ![npm: v1.1.0](././docs/badges/npm.svg) ![runtime: bun](././docs/badges/runtime.svg) ![typescript: strict](././docs/badges/typescript.svg) ![eslint: checked](././docs/badges/eslint.svg) ![prettier: checked](././docs/badges/prettier.svg) ![build: checked](././docs/badges/build.svg) ![tests: configured](././docs/badges/tests.svg) ![paradox: warnings](././docs/badges/docs.svg)
+![license: MIT](././docs/badges/license.svg) ![npm: v1.1.1](././docs/badges/npm.svg) ![runtime: bun](././docs/badges/runtime.svg) ![typescript: strict](././docs/badges/typescript.svg) ![eslint: checked](././docs/badges/eslint.svg) ![prettier: checked](././docs/badges/prettier.svg) ![build: checked](././docs/badges/build.svg) ![tests: configured](././docs/badges/tests.svg) ![paradox: warnings](././docs/badges/docs.svg)
 
 Implements server-side secret storage and infrastructure lifecycle integration for Supabase Vault.
 
@@ -39,19 +39,6 @@ Related symbols: `SupabaseVaultAdapterOptions`
 ## Contributors
 
 <!-- readme: contributors -start -->
-<table>
-	<tbody>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/artiphishle">
-                    <img src="https://avatars.githubusercontent.com/u/137318798?v=4" width="100;" alt="artiphishle"/>
-                    <br />
-                    <sub><b>Fabio Gartenmann</b></sub>
-                </a>
-            </td>
-		</tr>
-	<tbody>
-</table>
 <!-- readme: contributors -end -->
 
 ## Donation
