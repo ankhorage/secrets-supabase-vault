@@ -1,5 +1,11 @@
 # @ankhorage/supabase-vault
 
+## 1.1.0
+
+### Minor Changes
+
+- 54b0988: Add a Bun server-side SQL client factory for trusted Supabase Vault composition.
+
 ## 1.0.24
 
 ### Patch Changes

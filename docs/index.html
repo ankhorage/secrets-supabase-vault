@@ -133,6 +133,11 @@
       <small>1 function</small>
     </button>
   </li><li>
+    <button class="nav-button" type="button" data-target="src/createBunSupabaseVaultSqlClient.ts">
+      src/createBunSupabaseVaultSqlClient.ts
+      <small>4 functions</small>
+    </button>
+  </li><li>
     <button class="nav-button" type="button" data-target="src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts">
       src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts
       <small>6 functions</small>
@@ -182,9 +187,9 @@
     <section class="panel">
       <h2>Package overview</h2>
       <div class="summary">
-        <div><strong>12</strong><span class="muted">public exports</span></div>
+        <div><strong>13</strong><span class="muted">public exports</span></div>
         <div><strong>0</strong><span class="muted">components</span></div>
-        <div><strong>13</strong><span class="muted">modules</span></div>
+        <div><strong>14</strong><span class="muted">modules</span></div>
         <div><strong>1</strong><span class="muted">entrypoints</span></div>
       </div>
       <h3>Entrypoints</h3>
@@ -214,6 +219,11 @@
     <p class="muted">Referenced module</p>
     <p><strong>Dependencies:</strong> <span class="empty">None</span></p>
     <p><strong>Exports:</strong> <code>infraAdapterDescriptor</code></p>
+  </article><article class="item" data-search="src/createBunSupabaseVaultSqlClient.ts src/types.ts createBunSupabaseVaultSqlClient">
+    <h3>src/createBunSupabaseVaultSqlClient.ts</h3>
+    <p class="muted">Referenced module</p>
+    <p><strong>Dependencies:</strong> <code>src/types.ts</code></p>
+    <p><strong>Exports:</strong> <code>createBunSupabaseVaultSqlClient</code></p>
   </article><article class="item" data-search="src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts src/migrations.ts src/types.ts destroySupabaseVaultAsync">
     <h3>src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts</h3>
     <p class="muted">Referenced module</p>
@@ -244,11 +254,11 @@
     <p class="muted">Referenced module</p>
     <p><strong>Dependencies:</strong> <code>src/constants/infra.ts</code>, <code>src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts</code>, <code>src/features/secret-store-infrastructure/application/getSupabaseVaultStatusAsync.ts</code>, <code>src/features/secret-store-infrastructure/application/planSupabaseVaultAsync.ts</code>, <code>src/features/secret-store-infrastructure/application/reconcileSupabaseVaultAsync.ts</code>, <code>src/types.ts</code></p>
     <p><strong>Exports:</strong> <code>createInfraAdapter</code></p>
-  </article><article class="item" data-search="src/index.ts createInfraAdapter createSupabaseVaultAdapter infraAdapterDescriptor SUPABASE_VAULT_METADATA_TABLE SUPABASE_VAULT_MIGRATION_SQL SUPABASE_VAULT_SCHEMA SUPABASE_VAULT_SECRET_STORE_PROVIDER SupabaseVaultAdapter SupabaseVaultAdapterOptions SupabaseVaultQueryResult SupabaseVaultSqlClient SupabaseVaultSqlExecutor">
+  </article><article class="item" data-search="src/index.ts createBunSupabaseVaultSqlClient createInfraAdapter createSupabaseVaultAdapter infraAdapterDescriptor SUPABASE_VAULT_METADATA_TABLE SUPABASE_VAULT_MIGRATION_SQL SUPABASE_VAULT_SCHEMA SUPABASE_VAULT_SECRET_STORE_PROVIDER SupabaseVaultAdapter SupabaseVaultAdapterOptions SupabaseVaultQueryResult SupabaseVaultSqlClient SupabaseVaultSqlExecutor">
     <h3>src/index.ts</h3>
     <p class="muted">Configured entrypoint</p>
     <p><strong>Dependencies:</strong> <span class="empty">None</span></p>
-    <p><strong>Exports:</strong> <code>createInfraAdapter</code>, <code>createSupabaseVaultAdapter</code>, <code>infraAdapterDescriptor</code>, <code>SUPABASE_VAULT_METADATA_TABLE</code>, <code>SUPABASE_VAULT_MIGRATION_SQL</code>, <code>SUPABASE_VAULT_SCHEMA</code>, <code>SUPABASE_VAULT_SECRET_STORE_PROVIDER</code>, <code>SupabaseVaultAdapter</code>, <code>SupabaseVaultAdapterOptions</code>, <code>SupabaseVaultQueryResult</code>, <code>SupabaseVaultSqlClient</code>, <code>SupabaseVaultSqlExecutor</code></p>
+    <p><strong>Exports:</strong> <code>createBunSupabaseVaultSqlClient</code>, <code>createInfraAdapter</code>, <code>createSupabaseVaultAdapter</code>, <code>infraAdapterDescriptor</code>, <code>SUPABASE_VAULT_METADATA_TABLE</code>, <code>SUPABASE_VAULT_MIGRATION_SQL</code>, <code>SUPABASE_VAULT_SCHEMA</code>, <code>SUPABASE_VAULT_SECRET_STORE_PROVIDER</code>, <code>SupabaseVaultAdapter</code>, <code>SupabaseVaultAdapterOptions</code>, <code>SupabaseVaultQueryResult</code>, <code>SupabaseVaultSqlClient</code>, <code>SupabaseVaultSqlExecutor</code></p>
   </article><article class="item" data-search="src/migrations.ts SUPABASE_VAULT_METADATA_TABLE SUPABASE_VAULT_MIGRATION_SQL SUPABASE_VAULT_SCHEMA">
     <h3>src/migrations.ts</h3>
     <p class="muted">Referenced module</p>
@@ -314,6 +324,35 @@
     <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
     <div><strong>Related symbols:</strong> <span class="empty">None</span></div>
     
+    
+  </article>
+            </section>
+            <section>
+              <h3>src/createBunSupabaseVaultSqlClient.ts</h3>
+              <article class="item" id="symbol-createbunsupabasevaultsqlclient" data-search="createBunSupabaseVaultSqlClient  function src/createBunSupabaseVaultSqlClient.ts Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition. SupabaseVaultSqlClient (databaseUrl: string) =&gt; SupabaseVaultSqlClient">
+    <h4>createBunSupabaseVaultSqlClient</h4>
+    
+    <p class="muted">function • <code>src/createBunSupabaseVaultSqlClient.ts:6:1</code></p>
+    <p>Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition.</p>
+    
+    <p><strong>Export paths:</strong> <code>src/index.ts</code></p>
+    <div><strong>Related symbols:</strong> <ul class="chips"><li class="chip">SupabaseVaultSqlClient</li></ul></div>
+    <div>
+        <h5>Signature</h5>
+        <pre>(databaseUrl: string) =&gt; SupabaseVaultSqlClient</pre>
+        <table>
+                <thead><tr><th>Parameter</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr>
+                        <td><code>databaseUrl</code></td>
+                        <td><code>string</code></td>
+                        <td>yes</td>
+                        <td></td>
+                      </tr>
+                </tbody>
+              </table>
+        <p><strong>Returns:</strong> <code>SupabaseVaultSqlClient</code></p>
+      </div>
     
   </article>
             </section>
@@ -518,6 +557,9 @@ client remains necessary only for explicitly confirmed destructive namespace del
   module_src_adapter_ts --&gt; module_src_vaultOperations_ts
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
   package__ankhorage_secrets_supabase_vault -.-&gt; module_src_constants_infra_ts
+  module_src_createBunSupabaseVaultSqlClient_ts[&quot;src/createBunSupabaseVaultSqlClient.ts&quot;]
+  package__ankhorage_secrets_supabase_vault -.-&gt; module_src_createBunSupabaseVaultSqlClient_ts
+  module_src_createBunSupabaseVaultSqlClient_ts --&gt; module_src_types_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts&quot;]
   package__ankhorage_secrets_supabase_vault -.-&gt; module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts --&gt; module_src_migrations_ts
@@ -568,6 +610,9 @@ client remains necessary only for explicitly confirmed destructive namespace del
   module_src_adapter_ts --&gt; module_src_vaultOperations_ts
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
   package__ankhorage_secrets_supabase_vault -.-&gt; module_src_constants_infra_ts
+  module_src_createBunSupabaseVaultSqlClient_ts[&quot;src/createBunSupabaseVaultSqlClient.ts&quot;]
+  package__ankhorage_secrets_supabase_vault -.-&gt; module_src_createBunSupabaseVaultSqlClient_ts
+  module_src_createBunSupabaseVaultSqlClient_ts --&gt; module_src_types_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts&quot;]
   package__ankhorage_secrets_supabase_vault -.-&gt; module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts --&gt; module_src_migrations_ts
@@ -613,6 +658,7 @@ client remains necessary only for explicitly confirmed destructive namespace del
     <div class="mermaid">graph LR
   module_src_adapter_ts[&quot;src/adapter.ts&quot;]
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
+  module_src_createBunSupabaseVaultSqlClient_ts[&quot;src/createBunSupabaseVaultSqlClient.ts&quot;]
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts&quot;]
   module_src_features_secret_store_infrastructure_application_getSupabaseVaultStatusAsync_ts[&quot;src/features/secret-store-infrastructure/application/getSupabaseVaultStatusAsync.ts&quot;]
   module_src_features_secret_store_infrastructure_application_inspectSupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/inspectSupabaseVaultAsync.ts&quot;]
@@ -626,6 +672,7 @@ client remains necessary only for explicitly confirmed destructive namespace del
   module_src_vaultOperations_ts[&quot;src/vaultOperations.ts&quot;]
   module_src_adapter_ts --&gt; module_src_types_ts
   module_src_adapter_ts --&gt; module_src_vaultOperations_ts
+  module_src_createBunSupabaseVaultSqlClient_ts --&gt; module_src_types_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts --&gt; module_src_migrations_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts --&gt; module_src_types_ts
   module_src_features_secret_store_infrastructure_application_getSupabaseVaultStatusAsync_ts --&gt; module_src_features_secret_store_infrastructure_application_inspectSupabaseVaultAsync_ts
@@ -648,6 +695,7 @@ client remains necessary only for explicitly confirmed destructive namespace del
       <pre>graph LR
   module_src_adapter_ts[&quot;src/adapter.ts&quot;]
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
+  module_src_createBunSupabaseVaultSqlClient_ts[&quot;src/createBunSupabaseVaultSqlClient.ts&quot;]
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts&quot;]
   module_src_features_secret_store_infrastructure_application_getSupabaseVaultStatusAsync_ts[&quot;src/features/secret-store-infrastructure/application/getSupabaseVaultStatusAsync.ts&quot;]
   module_src_features_secret_store_infrastructure_application_inspectSupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/inspectSupabaseVaultAsync.ts&quot;]
@@ -661,6 +709,7 @@ client remains necessary only for explicitly confirmed destructive namespace del
   module_src_vaultOperations_ts[&quot;src/vaultOperations.ts&quot;]
   module_src_adapter_ts --&gt; module_src_types_ts
   module_src_adapter_ts --&gt; module_src_vaultOperations_ts
+  module_src_createBunSupabaseVaultSqlClient_ts --&gt; module_src_types_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts --&gt; module_src_migrations_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts --&gt; module_src_types_ts
   module_src_features_secret_store_infrastructure_application_getSupabaseVaultStatusAsync_ts --&gt; module_src_features_secret_store_infrastructure_application_inspectSupabaseVaultAsync_ts
@@ -685,6 +734,7 @@ client remains necessary only for explicitly confirmed destructive namespace del
     <div class="mermaid">graph LR
   module_src_adapter_ts[&quot;src/adapter.ts&quot;]
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
+  module_src_createBunSupabaseVaultSqlClient_ts[&quot;src/createBunSupabaseVaultSqlClient.ts&quot;]
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts&quot;]
   module_src_features_secret_store_infrastructure_application_getSupabaseVaultStatusAsync_ts[&quot;src/features/secret-store-infrastructure/application/getSupabaseVaultStatusAsync.ts&quot;]
   module_src_features_secret_store_infrastructure_application_inspectSupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/inspectSupabaseVaultAsync.ts&quot;]
@@ -696,6 +746,9 @@ client remains necessary only for explicitly confirmed destructive namespace del
   module_src_types_ts[&quot;src/types.ts&quot;]
   module_src_vaultMetadata_ts[&quot;src/vaultMetadata.ts&quot;]
   module_src_vaultOperations_ts[&quot;src/vaultOperations.ts&quot;]
+  export_createBunSupabaseVaultSqlClient[&quot;createBunSupabaseVaultSqlClient&quot;]
+  module_src_createBunSupabaseVaultSqlClient_ts --&gt; export_createBunSupabaseVaultSqlClient
+  export_createBunSupabaseVaultSqlClient -.-&gt; export_SupabaseVaultSqlClient
   export_createInfraAdapter[&quot;createInfraAdapter&quot;]
   module_src_features_secret_store_infrastructure_composition_createInfraAdapter_ts --&gt; export_createInfraAdapter
   export_createInfraAdapter -.-&gt; export_SupabaseVaultAdapterOptions
@@ -732,6 +785,7 @@ client remains necessary only for explicitly confirmed destructive namespace del
       <pre>graph LR
   module_src_adapter_ts[&quot;src/adapter.ts&quot;]
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
+  module_src_createBunSupabaseVaultSqlClient_ts[&quot;src/createBunSupabaseVaultSqlClient.ts&quot;]
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts&quot;]
   module_src_features_secret_store_infrastructure_application_getSupabaseVaultStatusAsync_ts[&quot;src/features/secret-store-infrastructure/application/getSupabaseVaultStatusAsync.ts&quot;]
   module_src_features_secret_store_infrastructure_application_inspectSupabaseVaultAsync_ts[&quot;src/features/secret-store-infrastructure/application/inspectSupabaseVaultAsync.ts&quot;]
@@ -743,6 +797,9 @@ client remains necessary only for explicitly confirmed destructive namespace del
   module_src_types_ts[&quot;src/types.ts&quot;]
   module_src_vaultMetadata_ts[&quot;src/vaultMetadata.ts&quot;]
   module_src_vaultOperations_ts[&quot;src/vaultOperations.ts&quot;]
+  export_createBunSupabaseVaultSqlClient[&quot;createBunSupabaseVaultSqlClient&quot;]
+  module_src_createBunSupabaseVaultSqlClient_ts --&gt; export_createBunSupabaseVaultSqlClient
+  export_createBunSupabaseVaultSqlClient -.-&gt; export_SupabaseVaultSqlClient
   export_createInfraAdapter[&quot;createInfraAdapter&quot;]
   module_src_features_secret_store_infrastructure_composition_createInfraAdapter_ts --&gt; export_createInfraAdapter
   export_createInfraAdapter -.-&gt; export_SupabaseVaultAdapterOptions
@@ -773,6 +830,24 @@ client remains necessary only for explicitly confirmed destructive namespace del
   export_SupabaseVaultSqlExecutor[&quot;SupabaseVaultSqlExecutor&quot;]
   module_src_types_ts --&gt; export_SupabaseVaultSqlExecutor
   export_SupabaseVaultSqlExecutor -.-&gt; export_SupabaseVaultQueryResult
+</pre>
+    </details>
+  </article><article class="item" data-search="createBunSupabaseVaultSqlClient sequence diagrams/sequences/create-bun-supabase-vault-sql-client.mmd">
+    <h3>createBunSupabaseVaultSqlClient sequence</h3>
+    <p class="muted"><code>diagrams/sequences/create-bun-supabase-vault-sql-client.mmd</code></p>
+    <div class="mermaid">sequenceDiagram
+  participant participant_createBunSupabaseVaultSqlClient as createBunSupabaseVaultSqlClient
+  participant participant_requireDatabaseUrl as requireDatabaseUrl
+  participant_createBunSupabaseVaultSqlClient-&gt;&gt;participant_requireDatabaseUrl: requireDatabaseUrl()
+  participant_requireDatabaseUrl--&gt;&gt;participant_createBunSupabaseVaultSqlClient: return
+</div>
+    <details>
+      <summary>View Mermaid source</summary>
+      <pre>sequenceDiagram
+  participant participant_createBunSupabaseVaultSqlClient as createBunSupabaseVaultSqlClient
+  participant participant_requireDatabaseUrl as requireDatabaseUrl
+  participant_createBunSupabaseVaultSqlClient-&gt;&gt;participant_requireDatabaseUrl: requireDatabaseUrl()
+  participant_requireDatabaseUrl--&gt;&gt;participant_createBunSupabaseVaultSqlClient: return
 </pre>
     </details>
   </article><article class="item" data-search="createInfraAdapter sequence diagrams/sequences/create-infra-adapter.mmd">
@@ -826,6 +901,27 @@ client remains necessary only for explicitly confirmed destructive namespace del
     <h3>createSupabaseVaultAdapter</h3>
     <p class="muted"><code>src/adapter.ts:6:1</code></p>
     <p class="empty">No description available.</p>
+</article>
+    </section>
+  </section><section id="view-src-createbunsupabasevaultsqlclient-ts" class="view" data-view="src/createBunSupabaseVaultSqlClient.ts" hidden>
+    <section class="panel">
+      <h2>src/createBunSupabaseVaultSqlClient.ts</h2>
+      <article class="item" data-search="createBunSupabaseVaultSqlClient src/createBunSupabaseVaultSqlClient.ts Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition.">
+    <h3>createBunSupabaseVaultSqlClient</h3>
+    <p class="muted"><code>src/createBunSupabaseVaultSqlClient.ts:6:1</code></p>
+    <p>Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition.</p>
+</article><article class="item" data-search="queryAsync src/createBunSupabaseVaultSqlClient.ts Execute one parameterized Vault query and expose only record-shaped result rows.">
+    <h3>queryAsync</h3>
+    <p class="muted"><code>src/createBunSupabaseVaultSqlClient.ts:22:1</code></p>
+    <p>Execute one parameterized Vault query and expose only record-shaped result rows.</p>
+</article><article class="item" data-search="requireDatabaseUrl src/createBunSupabaseVaultSqlClient.ts Require an explicit server-only PostgreSQL URL and reject blank configuration before connecting.">
+    <h3>requireDatabaseUrl</h3>
+    <p class="muted"><code>src/createBunSupabaseVaultSqlClient.ts:35:1</code></p>
+    <p>Require an explicit server-only PostgreSQL URL and reject blank configuration before connecting.</p>
+</article><article class="item" data-search="isRecord src/createBunSupabaseVaultSqlClient.ts Recognize a row object returned by Bun&#39;s PostgreSQL adapter.">
+    <h3>isRecord</h3>
+    <p class="muted"><code>src/createBunSupabaseVaultSqlClient.ts:43:1</code></p>
+    <p>Recognize a row object returned by Bun&#39;s PostgreSQL adapter.</p>
 </article>
     </section>
   </section><section id="view-src-features-secret-store-infrastructure-application-destroysupabasevaultasync-ts" class="view" data-view="src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts" hidden>

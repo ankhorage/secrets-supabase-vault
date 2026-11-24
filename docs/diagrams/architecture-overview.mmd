@@ -8,6 +8,9 @@ graph TD
   module_src_adapter_ts --> module_src_vaultOperations_ts
   module_src_constants_infra_ts["src/constants/infra.ts"]
   package__ankhorage_secrets_supabase_vault -.-> module_src_constants_infra_ts
+  module_src_createBunSupabaseVaultSqlClient_ts["src/createBunSupabaseVaultSqlClient.ts"]
+  package__ankhorage_secrets_supabase_vault -.-> module_src_createBunSupabaseVaultSqlClient_ts
+  module_src_createBunSupabaseVaultSqlClient_ts --> module_src_types_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts["src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts"]
   package__ankhorage_secrets_supabase_vault -.-> module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts --> module_src_migrations_ts

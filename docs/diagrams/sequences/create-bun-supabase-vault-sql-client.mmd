@@ -1,0 +1,5 @@
+sequenceDiagram
+  participant participant_createBunSupabaseVaultSqlClient as createBunSupabaseVaultSqlClient
+  participant participant_requireDatabaseUrl as requireDatabaseUrl
+  participant_createBunSupabaseVaultSqlClient->>participant_requireDatabaseUrl: requireDatabaseUrl()
+  participant_requireDatabaseUrl-->>participant_createBunSupabaseVaultSqlClient: return

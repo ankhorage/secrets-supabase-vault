@@ -1,5 +1,43 @@
 [
   {
+    "name": "createBunSupabaseVaultSqlClient",
+    "title": null,
+    "description": "Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition.",
+    "isReadme": false,
+    "see": [],
+    "security": [],
+    "kind": "function",
+    "modulePath": "src/createBunSupabaseVaultSqlClient.ts",
+    "sourceLocation": {
+      "filePath": "src/createBunSupabaseVaultSqlClient.ts",
+      "line": 6,
+      "column": 1
+    },
+    "exportPaths": [
+      "src/index.ts"
+    ],
+    "relatedSymbols": [
+      "SupabaseVaultSqlClient"
+    ],
+    "signatures": [
+      {
+        "label": "(databaseUrl: string) => SupabaseVaultSqlClient",
+        "parameters": [
+          {
+            "name": "databaseUrl",
+            "type": "string",
+            "required": true,
+            "description": null
+          }
+        ],
+        "returnType": "SupabaseVaultSqlClient",
+        "returnDescription": null
+      }
+    ],
+    "members": [],
+    "structuredRows": []
+  },
+  {
     "name": "createInfraAdapter",
     "title": null,
     "description": "Create the canonical Supabase Vault Infra service adapter.\n\nThe selected Supabase database lifecycle owns schema bootstrap from the public Vault migration.\nInfra discovery, planning and `up` therefore require no host PostgreSQL connection. A trusted SQL\nclient remains necessary only for explicitly confirmed destructive namespace deletion.",

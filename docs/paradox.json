@@ -18,7 +18,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v1.0.24",
+      "value": "v1.1.0",
       "color": "cb3837"
     },
     {
@@ -104,6 +104,16 @@
       ]
     },
     {
+      "path": "src/createBunSupabaseVaultSqlClient.ts",
+      "isEntrypoint": false,
+      "dependencies": [
+        "src/types.ts"
+      ],
+      "exports": [
+        "createBunSupabaseVaultSqlClient"
+      ]
+    },
+    {
       "path": "src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts",
       "isEntrypoint": false,
       "dependencies": [
@@ -175,6 +185,7 @@
       "isEntrypoint": true,
       "dependencies": [],
       "exports": [
+        "createBunSupabaseVaultSqlClient",
         "createInfraAdapter",
         "createSupabaseVaultAdapter",
         "infraAdapterDescriptor",
@@ -242,6 +253,44 @@
     }
   ],
   "exports": [
+    {
+      "name": "createBunSupabaseVaultSqlClient",
+      "title": null,
+      "description": "Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition.",
+      "isReadme": false,
+      "see": [],
+      "security": [],
+      "kind": "function",
+      "modulePath": "src/createBunSupabaseVaultSqlClient.ts",
+      "sourceLocation": {
+        "filePath": "src/createBunSupabaseVaultSqlClient.ts",
+        "line": 6,
+        "column": 1
+      },
+      "exportPaths": [
+        "src/index.ts"
+      ],
+      "relatedSymbols": [
+        "SupabaseVaultSqlClient"
+      ],
+      "signatures": [
+        {
+          "label": "(databaseUrl: string) => SupabaseVaultSqlClient",
+          "parameters": [
+            {
+              "name": "databaseUrl",
+              "type": "string",
+              "required": true,
+              "description": null
+            }
+          ],
+          "returnType": "SupabaseVaultSqlClient",
+          "returnDescription": null
+        }
+      ],
+      "members": [],
+      "structuredRows": []
+    },
     {
       "name": "createInfraAdapter",
       "title": null,
@@ -595,6 +644,50 @@
       "sourceLocation": {
         "filePath": "src/adapter.ts",
         "line": 6,
+        "column": 1
+      }
+    },
+    {
+      "name": "createBunSupabaseVaultSqlClient",
+      "description": "Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition.",
+      "see": [],
+      "security": [],
+      "sourceLocation": {
+        "filePath": "src/createBunSupabaseVaultSqlClient.ts",
+        "line": 6,
+        "column": 1
+      }
+    },
+    {
+      "name": "queryAsync",
+      "description": "Execute one parameterized Vault query and expose only record-shaped result rows.",
+      "see": [],
+      "security": [],
+      "sourceLocation": {
+        "filePath": "src/createBunSupabaseVaultSqlClient.ts",
+        "line": 22,
+        "column": 1
+      }
+    },
+    {
+      "name": "requireDatabaseUrl",
+      "description": "Require an explicit server-only PostgreSQL URL and reject blank configuration before connecting.",
+      "see": [],
+      "security": [],
+      "sourceLocation": {
+        "filePath": "src/createBunSupabaseVaultSqlClient.ts",
+        "line": 35,
+        "column": 1
+      }
+    },
+    {
+      "name": "isRecord",
+      "description": "Recognize a row object returned by Bun's PostgreSQL adapter.",
+      "see": [],
+      "security": [],
+      "sourceLocation": {
+        "filePath": "src/createBunSupabaseVaultSqlClient.ts",
+        "line": 43,
         "column": 1
       }
     },
@@ -1031,6 +1124,14 @@
   "sequenceScenarios": [
     {
       "kind": "export",
+      "name": "createBunSupabaseVaultSqlClient",
+      "sourcePath": "src/createBunSupabaseVaultSqlClient.ts",
+      "symbolName": "createBunSupabaseVaultSqlClient",
+      "description": "Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition.",
+      "isReadme": false
+    },
+    {
+      "kind": "export",
       "name": "createInfraAdapter",
       "sourcePath": "src/features/secret-store-infrastructure/composition/createInfraAdapter.ts",
       "symbolName": "createInfraAdapter",
@@ -1059,6 +1160,11 @@
         "sourcePath": "src/adapter.ts"
       },
       {
+        "fromPath": "src/createBunSupabaseVaultSqlClient.ts",
+        "toPath": "src/types.ts",
+        "sourcePath": "src/createBunSupabaseVaultSqlClient.ts"
+      },
+      {
         "fromPath": "src/index.ts",
         "toPath": "src/adapter.ts",
         "sourcePath": "src/index.ts"
@@ -1066,6 +1172,11 @@
       {
         "fromPath": "src/index.ts",
         "toPath": "src/constants/infra.ts",
+        "sourcePath": "src/index.ts"
+      },
+      {
+        "fromPath": "src/index.ts",
+        "toPath": "src/createBunSupabaseVaultSqlClient.ts",
         "sourcePath": "src/index.ts"
       },
       {
@@ -1170,6 +1281,30 @@
         "toSymbol": "createVaultOperations",
         "callExpression": "createVaultOperations",
         "sourcePath": "src/adapter.ts"
+      },
+      {
+        "fromSymbol": "createBunSupabaseVaultSqlClient",
+        "toSymbol": "requireDatabaseUrl",
+        "callExpression": "requireDatabaseUrl",
+        "sourcePath": "src/createBunSupabaseVaultSqlClient.ts"
+      },
+      {
+        "fromSymbol": "query",
+        "toSymbol": "queryAsync",
+        "callExpression": "queryAsync",
+        "sourcePath": "src/createBunSupabaseVaultSqlClient.ts"
+      },
+      {
+        "fromSymbol": "src/createBunSupabaseVaultSqlClient.ts",
+        "toSymbol": "operation",
+        "callExpression": "operation",
+        "sourcePath": "src/createBunSupabaseVaultSqlClient.ts"
+      },
+      {
+        "fromSymbol": "queryAsync",
+        "toSymbol": "unsafe",
+        "callExpression": "executor.unsafe",
+        "sourcePath": "src/createBunSupabaseVaultSqlClient.ts"
       },
       {
         "fromSymbol": "selectInternalVaultMetadata",
@@ -1632,6 +1767,11 @@
         "fromSymbol": "createSupabaseVaultAdapter",
         "toType": "SupabaseVaultAdapterOptions",
         "sourcePath": "src/adapter.ts"
+      },
+      {
+        "fromSymbol": "createBunSupabaseVaultSqlClient",
+        "toType": "SupabaseVaultSqlClient",
+        "sourcePath": "src/createBunSupabaseVaultSqlClient.ts"
       },
       {
         "fromSymbol": "createInfraAdapter",

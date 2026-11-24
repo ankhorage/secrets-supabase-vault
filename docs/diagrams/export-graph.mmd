@@ -1,6 +1,7 @@
 graph LR
   module_src_adapter_ts["src/adapter.ts"]
   module_src_constants_infra_ts["src/constants/infra.ts"]
+  module_src_createBunSupabaseVaultSqlClient_ts["src/createBunSupabaseVaultSqlClient.ts"]
   module_src_features_secret_store_infrastructure_application_destroySupabaseVaultAsync_ts["src/features/secret-store-infrastructure/application/destroySupabaseVaultAsync.ts"]
   module_src_features_secret_store_infrastructure_application_getSupabaseVaultStatusAsync_ts["src/features/secret-store-infrastructure/application/getSupabaseVaultStatusAsync.ts"]
   module_src_features_secret_store_infrastructure_application_inspectSupabaseVaultAsync_ts["src/features/secret-store-infrastructure/application/inspectSupabaseVaultAsync.ts"]
@@ -12,6 +13,9 @@ graph LR
   module_src_types_ts["src/types.ts"]
   module_src_vaultMetadata_ts["src/vaultMetadata.ts"]
   module_src_vaultOperations_ts["src/vaultOperations.ts"]
+  export_createBunSupabaseVaultSqlClient["createBunSupabaseVaultSqlClient"]
+  module_src_createBunSupabaseVaultSqlClient_ts --> export_createBunSupabaseVaultSqlClient
+  export_createBunSupabaseVaultSqlClient -.-> export_SupabaseVaultSqlClient
   export_createInfraAdapter["createInfraAdapter"]
   module_src_features_secret_store_infrastructure_composition_createInfraAdapter_ts --> export_createInfraAdapter
   export_createInfraAdapter -.-> export_SupabaseVaultAdapterOptions

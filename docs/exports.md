@@ -1,5 +1,19 @@
 # Public API
 
+## createBunSupabaseVaultSqlClient
+
+Kind: `function`
+Module: `src/createBunSupabaseVaultSqlClient.ts`
+Source: `src/createBunSupabaseVaultSqlClient.ts:6:1`
+
+Create a Bun server-side PostgreSQL client for trusted Supabase Vault adapter composition.
+
+### Signatures
+
+- `(databaseUrl: string) => SupabaseVaultSqlClient`
+  - databaseUrl: `string`
+  - returns: `SupabaseVaultSqlClient`
+
 ## createInfraAdapter
 
 Kind: `function`
